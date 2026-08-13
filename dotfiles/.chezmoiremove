@@ -1,17 +1,17 @@
 .DS_Store
 
-# Prepend with a `/` to specify a specific path relative to $HOME.
+# Paths are relative to $HOME. A leading `/` is rejected as an invalid path.
 
-/.config/usrbin/sabc.toml
-/.config/usrbin/autopull.toml
-/.config/usrbin/nd.toml
-/.config/ghostty/themes/warm-burnout-dark
-/.config/ghostty/themes/warm-burnout-light
-/.config/eza/theme.yml
-/.config/dotfile_source/third-party/eza.sh
-/.config/dotfile_source/0040-path.sh
-/bin/osx-defaults.sh
-/bin/pull_all_repos
+.config/usrbin/sabc.toml
+.config/usrbin/autopull.toml
+.config/usrbin/nd.toml
+.config/ghostty/themes/warm-burnout-dark
+.config/ghostty/themes/warm-burnout-light
+.config/eza/theme.yml
+.config/dotfile_source/third-party/eza.sh
+.config/dotfile_source/0040-path.sh
+bin/osx-defaults.sh
+bin/pull_all_repos
 
 # -- Legacy scripts removed --
 bin/uvupgrade
@@ -21,47 +21,47 @@ bin/osx-defaults.py
 
 # --- Legacy trees relocated by the XDG migration ---
 # Old ~/.shell tree -> ~/.config/dotfile_source
-/.shell
+.shell
 # Old ~/.sed tree -> ~/.local/share/sed
-/.sed
+.sed
 
 # --- Single dotfiles relocated or removed ---
-/.curlrc
-/.gitconfig
-/.gitignore
-/.nanorc
-/.nd.toml
-/.git_stop_words
+.curlrc
+.gitconfig
+.gitignore
+.nanorc
+.nd.toml
+.git_stop_words
 # Removed entirely, no replacement
-/.digrc
-/.yamllint.yml
+.digrc
+.yamllint.yml
 
 # --- dotfile_source third-party integrations removed ---
-/.config/dotfile_source/third-party/agent-safehouse.sh
-/.config/dotfile_source/third-party/jdfile.sh
-/.config/dotfile_source/third-party/npm.sh
-/.config/dotfile_source/third-party/usrbin.sh
+.config/dotfile_source/third-party/agent-safehouse.sh
+.config/dotfile_source/third-party/jdfile.sh
+.config/dotfile_source/third-party/npm.sh
+.config/dotfile_source/third-party/usrbin.sh
 
 # --- Powerlevel10k config relocated to ~/.config/zsh/p10k.zsh ---
 # (was auto-sourced from dotfile_source; now sourced explicitly by 001-plugins.zsh)
-/.config/dotfile_source/030-prompt.zsh
+.config/dotfile_source/030-prompt.zsh
 
 # --- App configs removed or relocated ---
-/.config/agent-safehouse/local-overrides.sb
-/.config/jdfile/config.toml
-/.config/usrbin/aptup.toml
-/.config/usrbin/config.toml
+.config/agent-safehouse/local-overrides.sb
+.config/jdfile/config.toml
+.config/usrbin/aptup.toml
+.config/usrbin/config.toml
 
 # --- macOS app configs migrated from Library to ~/.config ---
-/Library/Application Support/brewup/config.toml
-/Library/Application Support/halp/config.toml
-/Library/Application Support/jdfile/config.toml
-/Library/Application Support/usrbin/config.toml
-/Library/Application Support/vid-cleaner/config.toml
+Library/Application Support/brewup/config.toml
+Library/Application Support/halp/config.toml
+Library/Application Support/jdfile/config.toml
+Library/Application Support/usrbin/config.toml
+Library/Application Support/vid-cleaner/config.toml
 
 # --- Helper scripts and assets removed ---
-/bin/install-binary.py
-/.vscode/extensions/nateLandauTheme
+bin/install-binary.py
+.vscode/extensions/nateLandauTheme
 
 # --- Remove iterm2 ---
 .config/applications/iterm2
