@@ -11,9 +11,9 @@ pr() {
 
 {{- if lookPath "vidcleaner" }}
 alias vc="vidcleaner"
-alias vcmine="vidcleaner clean --vp9 --replace"
-alias vcdown="vidcleaner clean --downmix --replace"
-alias vc265="vidcleaner clean --downmix --h265 --replace"
+alias vcmine="vidcleaner clean --vp9 --overwrite"
+alias vcdown="vidcleaner clean --downmix --overwrite"
+alias vc265="vidcleaner clean --downmix --h265 --overwrite"
 {{- end }}
 
 # Local navigational Shortcuts

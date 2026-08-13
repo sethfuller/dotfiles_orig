@@ -1,5 +1,8 @@
 {{- if and (.homelab_member) (lookPath "nomad") -}}
 
+alias drain-node='nomad node drain -enable -yes -self'
+alias start-node='nomad node drain -disable -yes -self'
+
 nomadExecutable="$(command -v nomad)"
 if [[ -n ${BASH} ]]; then
     complete -C "${nomadExecutable}" nomad
